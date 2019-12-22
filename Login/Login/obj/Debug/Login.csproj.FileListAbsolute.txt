@@ -1,0 +1,9 @@
+D:\VS2012\项目文件\Login\Login\bin\Debug\Login.exe.config
+D:\VS2012\项目文件\Login\Login\bin\Debug\Login.exe
+D:\VS2012\项目文件\Login\Login\bin\Debug\Login.pdb
+D:\VS2012\项目文件\Login\Login\obj\Debug\Login.csprojResolveAssemblyReference.cache
+D:\VS2012\项目文件\Login\Login\obj\Debug\Login.Form1.resources
+D:\VS2012\项目文件\Login\Login\obj\Debug\Login.Properties.Resources.resources
+D:\VS2012\项目文件\Login\Login\obj\Debug\Login.csproj.GenerateResource.Cache
+D:\VS2012\项目文件\Login\Login\obj\Debug\Login.exe
+D:\VS2012\项目文件\Login\Login\obj\Debug\Login.pdb

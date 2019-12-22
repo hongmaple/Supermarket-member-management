@@ -1,0 +1,3 @@
+D:\VS2012\项目文件\Login\Login\Fakes\WindowsFormsIntegration.fakes : warning : 无法为 System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer 生成存根: 类型已密封。
+D:\VS2012\项目文件\Login\Login\Fakes\WindowsFormsIntegration.fakes : warning : 无法为 System.Windows.Forms.Integration.PropertyTranslator 生成存根: 类型已密封。
+D:\VS2012\项目文件\Login\Login\Fakes\WindowsFormsIntegration.fakes : warning : 无法为 System.Windows.Forms.Integration.PropertyTranslator 生成填充码: 类型是一个委托。

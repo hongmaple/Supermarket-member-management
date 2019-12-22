@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A640127-131E-47EE-BF58-826ECCF82E94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.DebuggerVisualizers %282010%29">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.DebuggerVisualizers (2010).dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Fuzzy">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Fuzzy.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Genetic">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Genetic.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging.Formats">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Imaging.Formats.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging.IPPrototyper">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Imaging.IPPrototyper.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.MachineLearning">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Neuro">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Neuro.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Robotics.Lego">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Lego.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Robotics.Surveyor">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Surveyor.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Robotics.TeRK">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Robotics.TeRK.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.FFMPEG">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.FFMPEG.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.Kinect">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.Kinect.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.VFW">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.VFW.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.Ximea">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.Ximea.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Vision">
+      <HintPath>..\..\..\..\AForge.NET Framework-2.2.5\Release\AForge.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WindowsFormsIntegration.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\WindowsFormsIntegration.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddTheConsumption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTheConsumption.Designer.cs">
+      <DependentUpon>AddTheConsumption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBTools.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImgCaiji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImgCaiji.Designer.cs">
+      <DependentUpon>ImgCaiji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="liulan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="liulan.Designer.cs">
+      <DependentUpon>liulan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lunbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lunbo.designer.cs">
+      <DependentUpon>lunbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_photo_collection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_photo_collection.Designer.cs">
+      <DependentUpon>Member_photo_collection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pinmusuodin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pinmusuodin.Designer.cs">
+      <DependentUpon>Pinmusuodin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecialOffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialOffer.Designer.cs">
+      <DependentUpon>SpecialOffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaticPropertiesOfClasses.cs" />
+    <Compile Include="suopin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suopin.Designer.cs">
+      <DependentUpon>suopin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XingZengoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XingZengoods.Designer.cs">
+      <DependentUpon>XingZengoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="会员查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="会员查询.Designer.cs">
+      <DependentUpon>会员查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="显龙\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="显龙\Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="显龙\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="显龙\Form3.designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="显龙\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="显龙\Form4.designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="显龙\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="显龙\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="杨乾\系统设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="杨乾\系统设置.designer.cs">
+      <DependentUpon>系统设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="杨乾\lbtianjia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="杨乾\lbtianjia.designer.cs">
+      <DependentUpon>lbtianjia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="杨乾\sptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="杨乾\sptj.designer.cs">
+      <DependentUpon>sptj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="杨乾\zkktianjia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="杨乾\zkktianjia.designer.cs">
+      <DependentUpon>zkktianjia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="添加会员.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="添加会员.Designer.cs">
+      <DependentUpon>添加会员.cs</DependentUpon>
+    </Compile>
+    <Compile Include="锦鹏\GM.cs" />
+    <Compile Include="锦鹏\information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="锦鹏\information.designer.cs">
+      <DependentUpon>information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="锦鹏\Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="锦鹏\Management.designer.cs">
+      <DependentUpon>Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="锦鹏\Recharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="锦鹏\Recharge.designer.cs">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="锦鹏\Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="锦鹏\Transfer.designer.cs">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="锦鹏\ZengGai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="锦鹏\ZengGai.designer.cs">
+      <DependentUpon>ZengGai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="高级查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="高级查询.Designer.cs">
+      <DependentUpon>高级查询.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddTheConsumption.resx">
+      <DependentUpon>AddTheConsumption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImgCaiji.resx">
+      <DependentUpon>ImgCaiji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="liulan.resx">
+      <DependentUpon>liulan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lunbo.resx">
+      <DependentUpon>lunbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_photo_collection.resx">
+      <DependentUpon>Member_photo_collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pinmusuodin.resx">
+      <DependentUpon>Pinmusuodin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SpecialOffer.resx">
+      <DependentUpon>SpecialOffer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suopin.resx">
+      <DependentUpon>suopin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XingZengoods.resx">
+      <DependentUpon>XingZengoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="会员查询.resx">
+      <DependentUpon>会员查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="显龙\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="显龙\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="显龙\Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="显龙\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="杨乾\系统设置.resx">
+      <DependentUpon>系统设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="杨乾\lbtianjia.resx">
+      <DependentUpon>lbtianjia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="杨乾\sptj.resx">
+      <DependentUpon>sptj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="杨乾\zkktianjia.resx">
+      <DependentUpon>zkktianjia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="添加会员.resx">
+      <DependentUpon>添加会员.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="锦鹏\information.resx">
+      <DependentUpon>information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="锦鹏\Management.resx">
+      <DependentUpon>Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="锦鹏\Recharge.resx">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="锦鹏\Transfer.resx">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="锦鹏\ZengGai.resx">
+      <DependentUpon>ZengGai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="高级查询.resx">
+      <DependentUpon>高级查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 0969.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 0200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 0333.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 0072.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 0280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 0075.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loginbeij_副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图片1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_副本1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 0268_副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 1443_副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 0187_副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png 0797_副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSComctlLib">
+      <Guid>{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSComctlLib">
+      <Guid>{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>99</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t019664e41275f182ff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t01806aca2b3b2b2074.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t01b5b8511e4fa9b0f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c148686784a6d2b07e6d887bc8d8a100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7ba24af6533834ef75d118ef53492ebe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fc703cc84129e4e7f6004ecdd8f3ccea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e556bfe81ea250b5853610f184c78b95.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0ff49c526c4e2f0e181cf165452d9b22.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
