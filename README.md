@@ -9,8 +9,8 @@ wx: mapleCx331   qq群：[![加入QQ群](https://img.shields.io/badge/628043364-
 ## 开源不易，谢谢打赏
 <table>
  <td>
-   <tr><img style="height: 180px;width: 230px" src="https://gitee.com/hongmaple/netdisk/raw/master/image/wxPay.jpg" alt=""/></tr>
-   <tr><img style="height: 180px;width: 230px" src="https://gitee.com/hongmaple/netdisk/raw/master/image/zfb.jpg" alt=""/></tr>
+   <td><img style="height: 180px;width: 230px" src="https://gitee.com/hongmaple/netdisk/raw/master/image/wxPay.jpg" alt=""/></td>
+   <td><img style="height: 180px;width: 230px" src="https://gitee.com/hongmaple/netdisk/raw/master/image/zfb.jpg" alt=""/></td>
  </td>
 </table>
 ## 项目截图：
